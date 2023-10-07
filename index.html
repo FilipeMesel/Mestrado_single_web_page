@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <style>
+        body {
+            background-color: #8B008B;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #FFF;
+        }
+
+        header {
+            background: rgba(139, 0, 139, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            display: flex; /* Adicione flexbox para alinhar o nome e o e-mail */
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Empilhe elementos verticalmente */
+        }
+
+        header h1 {
+            font-size: 2em;
+            margin: 0; /* Remova a margem superior para o nome */
+        }
+
+        .contact-info {
+            display: flex;
+            margin-top: 10px;
+        }
+
+        .contact-info p {
+            margin: 0 10px;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Centralize os cards horizontalmente */
+            align-items: center; /* Centralize os cards verticalmente */
+            padding: 20px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.8); /* Fundo semitransparente branco para efeito de vidraçaria */
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            width: 45%;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+            /* Adicione efeito de hover */
+            &:hover {
+                background: rgba(255, 255, 255, 0.9); /* Fundo semitransparente branco mais claro no hover */
+                color: black;
+            }
+        }
+
+        .card h2 {
+            font-size: 1.5em;
+        }
+
+        .paragrafo-mestrado {
+            font-size: 18px;
+            margin-left: 15%;
+            margin-right: 20%;
+        }
+
+        .paragrafo-mestrado h2{
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        a {
+            color: black;
+            background: white;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Filipe Mesel L. C. Cardoso</h1>
+        <div class="contact-info">
+            <p>Email: filipemesel96@gmail.com</p>
+            <p>Telefone: +55 (81) 99707-0628</p>
+        </div>
+    </header>
+    <main>
+        <div class="paragrafo-mestrado">
+            <h2>DESCRIÇÃO</h2>
+            <P>
+                Repositório contendo o material construido para elaborar os resultados referentes a pesquisa de mestrado que resultou no 
+                artigo "Monitoring the Daily Rhythm of Total Green Leaf Volatiles with a Low-Cost Multi-Sensor Node". O repositório pode
+                ser acessado clicando <a target="_blank" href="https://github.com/FilipeMesel/mestrado">aqui!</a>
+            </P>
+            <h2>ORGANIZAÇÃO</h2>
+            <P>
+                O repositório contem as pastas: Firmware, Hardware e Python Scripts. A pasta "Firmware" contempla todos os arquivos de 
+                firmware que formam o sistema que rege o funcionamento dos sensores. A pasta "Hardware" contempla todos os arquivos da 
+                placa que originou o hardware dos sensores. Já a pasta "Python Scripts" apresenta os arquivos .py e os dados que o sensor 
+                gerou em cada etapa de testes.
+            </P>
+            <h2>Hardware</h2>
+            <P>
+                Contempla todos os arquivos gerados para fabricação das PCBs. Aqui também são encontrados os arquivos do 
+                projeto da placa que fora elaborado com a ferramenta "Kicad"
+            </P>
+            <h2>Firmware</h2>
+            <P>
+                Contempla os arquivos do firmware que rege o funcionamento dos sensores. É possível perceber que as versões das 
+                bibliotecas utilizadas também foram compartilhadas. A biblioteca "SparkFun_SGP30_Arduino_Library-main" sofreu uma leve 
+                alteração em um de seus métodos para contemplar o uso da versão do C.I. SGP30 utilizado.
+            </P>
+            <h2>Python Scripts</h2>
+            <P>
+                Pecutar os scripts de maneira correta, é preciso rodar as linhas de código sequencialmente. 
+                A primeira linha requer uma atenção especial uma vez que ela é responssável por permitir a importação dos dados.
+            </P>
+        </div>
+        <!-- <div class="card fullstack">
+            <h2>Fullstack Projects</h2>
+        </div>
+        <div class="card embedded">
+            <h2>C++ Embedded Systems Projects</h2>
+        </div>
+        <div class="card mestrado">
+            <h2>Sobre Meu Mestrado</h2>
+        </div>
+        <div class="card python">
+            <h2>Python Projects</h2>
+        </div> -->
+    </main>
+</body>
+</html>
